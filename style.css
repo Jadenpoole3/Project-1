@@ -1,0 +1,39 @@
+header{
+    text-align: center;
+    color: blue;
+    
+}
+html {
+    background-color: lightblue;
+
+}
+img {
+    display: flex;
+    justify-content: center;
+
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: tomato;
+
+}
+.life {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn btn-primary btn-lg{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: tomato;
+}
