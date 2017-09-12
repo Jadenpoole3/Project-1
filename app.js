@@ -1,0 +1,3 @@
+$('#value').onClick() {
+    if
+}

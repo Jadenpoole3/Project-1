@@ -19,3 +19,57 @@
 <a class="btn btn-primary" href="/Users/jadenpoole/Desktop/class/Portifolio/questions.html" role="button">Groovy Start 2</a>
 
 <td id="Micheal Jordan"> What basketball player won a championsip and also star in a movie called Space Jam in the same year</td>
+
+
+#value  {
+color: white;
+text-decoration: none;
+}
+
+#value:hover  {
+    color: yellow;
+    text-decoration: none;
+}
+
+#Micheal-Jordan {
+    font-size: 30px;
+    background-color: blue;
+    
+}
+
+
+
+ <tr>
+                <td> <a id="value" href="questions.html" >$200 </a></td> <td a id="value" href="questions.html"> $200 </td> <td a id="value" href="questions.html"> $200 </td> <td a id="value" href="questions.html"> $200 </td> <td a id="value" href="question.html"> $200 </td></tr>
+                <td> <a id="value" href="questions.html"> $300 </td> <td a id="value" href="questions.html"> $300 </td> <td a id="value" href="questions.html"> $300 </td> <td a id="value" href="questions.html"> $300 </td> <td a id="value" href="questions.html"> $300 </td></tr>
+                <td> <a id="value" href="questions.html" >$400 </td> <td a id="value" href="questions.html"> $400 </td> <td a id="value" href="questions.html"> $400 </td> <td a id="value" href="questions.html"> $400 </td> <td a id="value" href="questions.html"> $400 </td></tr>
+                <td> <a id="value" href="questions.html" >$500 </td> <td a id="value" href="questions.html"> $500 </td> <td a id="value" href="questions.html"> $500 </td> <td a id="value" href="questions.html"> $500 </td> <td a id="value" href="questions.html"> $500 </td></tr>
+                <td> <a id="value" href="questions.html" >$1000 </td> <td a id="value" href="questions.html"> $1000 </td> <td a id="value" href="questions.html"> $1000 </td> <td a id="value" href="questions.html"> $1000 </td> <td a id="value" href="questions.html"> $1000 </td></tr>
+        </table>
+
+
+
+
+
+
+
+
+         <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Questions</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <table align="center" border="1" width='600' height="450"> 
+        <tr>
+    <td id="Micheal-Jordan">What basketball player won a championship and starred in Space Jam the same year? </td>
+    
+</tr>
+    </table>
+</body>
+</html>
