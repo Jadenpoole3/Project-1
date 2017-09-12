@@ -1,0 +1,19 @@
+ <td> Sports </td> <td> Music </td> <td> Movies </td> 
+<table align="center"  border="1" widith="600" height"450</table> </table>
+        
+<td> <a id="value" href=" $100 </td> <td> $100 </td> <td> $100 </td> 
+<td> $200 </td> <td> $200</td> <td> $200 </td>
+<td> $300 </td> <td> $300 </td> <td> $300 </td>
+
+       table {
+           text-align: center;
+           color: white;
+           background-color: blue;
+       }
+
+
+<button type="button" class="btn btn-primary">Groovy Start</button>
+
+
+
+<a class="btn btn-primary" href="/Users/jadenpoole/Desktop/class/Portifolio/questions.html" role="button">Groovy Start 2</a>

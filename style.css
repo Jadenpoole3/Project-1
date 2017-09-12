@@ -1,39 +1,64 @@
 header{
-    text-align: center;
-    color: blue;
-    
-}
-html {
-    background-color: lightblue;
+    display: flex;
+justify-content: center;
+color: blue;
 
 }
+
+body {
+    background-color: yellow;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #15058A;
+    
+}
+
 img {
     display: flex;
     justify-content: center;
-
+    flex-direction: center;
+    margin: auto;
+    width: 50%;
+    height: 300px;
 }
-h1 {
+
+.btn-primary {
     display: flex;
     justify-content: center;
-    color: tomato;
-
-}
-.life {
-    display: flex;
-    justify-content: center;
-
-}
-
-.btn btn-primary btn-lg{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    align-content: center;
     align-items: center;
+    color: blue;
+    background-color:white;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    width: 100px;
+    text-decoration: none;
+
+
+
+    
+}
+
+td {
+    width: 100px;
+    height:  100px;
+    text-align: center;
+    color: #D5D51E;
+    background-color: blue;
 
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
-    color: tomato;
+#Sp hover {
+color: yellow;
+font-weight: bold;
+
+}
+
+#Sp {
+    color: yellow;
+    text-decoration: none;
 }
