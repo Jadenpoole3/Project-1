@@ -52,13 +52,18 @@ td {
 
 }
 
-#Sp hover {
-color: yellow;
-font-weight: bold;
-
+#value  {
+color: white;
+text-decoration: none;
 }
 
-#Sp {
+#value:hover  {
     color: yellow;
     text-decoration: none;
+}
+
+#Micheal-Jordan {
+    font-size: 30px;
+    background-color: blue;
+    
 }
