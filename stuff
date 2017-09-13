@@ -73,3 +73,170 @@ text-decoration: none;
     </table>
 </body>
 </html>
+
+
+<button> question </button>
+                        <span> What basketball player won a championship and starred in Space Jam the same year? </span>
+                        <div>
+                          <form>
+                            <input type="text"  value="Micheal Jordan">
+                          </form>
+                        </div>
+                        <p style="display:none;">I'm hidden...</p>
+
+
+
+function question() {
+    $( "span,div" ).show( "slow" );
+  }
+  // Can pass in function name
+  $( "button" ).click( question );
+   
+  $( "form" ).submit(function( event ) {
+    if ( $( "input" ).val() === "yes" ) {
+      $( "p" ).show( 4000, function() {
+        $( this ).text( "Correct or Wrong" );
+      });
+    }
+    $( "span,div" ).hide( "fast" );
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Board</title>
+
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <table align="center"  border="1" widith="600" height"450"> <tr>
+                <tr>
+                        <td> Sports </td> <td> Music </td> <td> Movies </td> <td> Tv Shows </td> <td> Guess the Song</td></tr>
+
+                        
+                        <td> $200 </td> <td> $200 </td> <td> $200 </td> <td> $200 </td> <td> $200 </td></tr>                        
+                        <td> $300 </td> <td> $300 </td> <td> $300 </td> <td>$300 </td> <td> $300 </td></tr>
+                        <td> $400 </td> <td> $400 </td> <td> $400 </td> <td> $400 </td> <td>$400 </td></tr>
+                        <td> $500 </td> <td> $500 </td> <td>  $500 </td> <td>> $500 </td> <td> $500 </td></tr>
+                        <td> $1000 </td> <td> $1000 </td> <td>> $1000 </td> <td> $1000 </td> <td> $1000 </td></tr>
+                </table>
+                
+                <script>
+                       
+        <script type="text/javascript" src="app.js"></script> 
+        
+</body>
+</html>
+
+
+
+header{
+    display: flex;
+justify-content: center;
+color: blue;
+
+}
+
+body {
+    background-color: yellow;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: #15058A;
+    
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    margin: auto;
+    width: 50%;
+    height: 300px;
+}
+
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: blue;
+    background-color:white;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    width: 100px;
+    text-decoration: none;
+
+
+
+    
+}
+
+td {
+    width: 100px;
+    height:  100px;
+    text-align: center;
+    color: #D5D51E;
+    background-color: blue;
+
+}
+
+
+
+
+add400 = () => {
+  var y = window.prompt("What basketball player had 42 triple doubles in the 2016-2017 year")
+if(y === "Russell Westbrook") {
+  window.alert('correct')
+} else {
+  window.alert('incorrect')
+}
+}
+
+
+
+$(() => {
+  const sportsQuestions = [
+    {
+      questions: "Who won the world series in 2016",
+      answer: "Chicago Cubs",
+      choices: "New York Yankees, Chicago Cubs, Cleveland Indians, ",
+      points: 200,
+    },
+    {
+      questions: "What team lost a 28-3 lead in the Super Bowl",
+      answer: "Atlanta Falcons",
+      choices: "Atlanta Falcons, New England Patriots, Green Bay Packers, ",
+      points: 300,
+    },
+    
+    {
+      questions: "What basketball player had 42 triple doubles in the 2016-2017 year",
+      answer: "Russell Westbrook",
+      choices: "Stephen Curry, Lebron James, Russell Westbrook, ",
+      points: 300,
+    },
+    
+
+  ]
+  
+
+
+
+
+$('.basic').on('click', function ($event) {
+  const y = prompt(sportsQuestions[0].questions, `Type ${sportsQuestions[0].choices}`);
+if(y === sportsQuestions[0].answer) {
+  window.alert('Correct')
+} else {
+  window.alert('incorrect')
+}
