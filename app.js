@@ -1,3 +1,5 @@
+const jeopardy = document.getElementById('jeopardy-song');
+
 let score = 0;
   const sportsQuestions = [
     {
@@ -36,6 +38,44 @@ let score = 0;
     
 
   ]
+
+  const musicQuestions = [
+    {
+      questions: "Who made your hotline bling in 2016",
+      answer: "Drake",
+      choices: "Drake, Jay-z, Kendrick Lamar , ",
+      points: 200,
+    },
+    {
+      questions: "What is the album of the year ",
+      answer: "Damn",
+      choices: "Damn, More Life, Cozy tapes, ",
+      points: 300,
+    },
+    
+    {
+      questions: "Who has the major keys to sucesss",
+      answer: "Dj Khaled",
+      choices: "Dj Khaled, Rick Ross, Lil wayne, ",
+      points: 400,
+    },
+
+    {
+      questions: "Who invented the moon walk",
+      answer: "Micheal Jackson",
+      choices: "Micheal Jackson, Rick James, Prince, ",
+      points: 500,
+    },
+    {
+      questions: "Who is the best artist alive",
+      answer: "Jaden Poole",
+      choices: "Jay-z, Jaden Poole, Slick Rick, ",
+      points: 1000,
+    }
+
+    
+
+  ]
   
 
 
@@ -54,7 +94,7 @@ if(y === sportsQuestions[0].answer) {
   $('.scoreSheet').html(score);
 
     }
-    $(this).remove()
+  
   });
 
   $('.sports2').on('click', function () {
@@ -63,6 +103,7 @@ if(y === sportsQuestions[0].answer) {
     window.alert('Correct')
     score += 300;
     $('.scoreSheet').html(score);
+
     
     
   } else {
@@ -71,6 +112,7 @@ if(y === sportsQuestions[0].answer) {
     $('.scoreSheet').html(score);
   
       }
+      const jeopardy = (time, sound = true)
     });
 
 
@@ -121,43 +163,20 @@ if(y === sportsQuestions[0].answer) {
         
             }
           });
-      
 
-          const MusicQuestions = [
-            {
-              questions: "",
-              answer: "Chicago Cubs",
-              choices: "New York Yankees, Chicago Cubs, Cleveland Indians, ",
-              points: 200,
-            },
-            {
-              questions: "What team lost a 28-3 lead in the Super Bowl",
-              answer: "Atlanta Falcons",
-              choices: "Atlanta Falcons, New England Patriots, Green Bay Packers, ",
-              points: 300,
-            },
-            
-            {
-              questions: "What basketball player had 42 triple doubles in the 2016-2017 year",
-              answer: "Russell Westbrook",
-              choices: "Stephen Curry, Lebron James, Russell Westbrook, ",
-              points: 400,
-            },
-        
-            {
-              questions: "What team won 72 games in 2015-2016",
-              answer: "Warriors",
-              choices: "Jazz, Heat, Warriors, ",
-              points: 500,
-            },
-            {
-              questions: "Who is the best basketball player ever",
-              answer: "Jaden Poole",
-              choices: "Lebron James, Jaden Poole, Micheal Jordan, ",
-              points: 1000,
-            }
-        
-            
-        
-          ]
           
+          $('.music').on('click', function () {
+            
+            const y = prompt(musicQuestions[0].questions);
+          if(y === musicQuestions[0].answer) {
+            window.alert('Correct')
+            score += 200;
+            $('.scoreSheet').html(score);
+            
+            
+          } else {
+            window.alert('incorrect')
+            score -= 200;
+            $('.scoreSheet').html(score);
+          }
+            });
