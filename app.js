@@ -25,7 +25,14 @@ let score = 0;
       answer: "Warriors",
       choices: "Jazz, Heat, Warriors, ",
       points: 500,
+    },
+    {
+      questions: "Who is the best basketball player ever",
+      answer: "Jaden Poole",
+      choices: "Lebron James, Jaden Poole, Micheal Jordan, ",
+      points: 1000,
     }
+
     
 
   ]
@@ -99,5 +106,58 @@ if(y === sportsQuestions[0].answer) {
           }
         });
     
+        $('.sports5').on('click', function () {
+          const y = prompt(sportsQuestions[4].questions,);
+        if(y === sportsQuestions[4].answer) {
+          window.alert('Correct')
+          score += 1000;
+          $('.scoreSheet').html(score);
+          
+          
+        } else {
+          window.alert('incorrect')
+          score -=  1000;
+          $('.scoreSheet').html(score);
+        
+            }
+          });
+      
 
-
+          const MusicQuestions = [
+            {
+              questions: "",
+              answer: "Chicago Cubs",
+              choices: "New York Yankees, Chicago Cubs, Cleveland Indians, ",
+              points: 200,
+            },
+            {
+              questions: "What team lost a 28-3 lead in the Super Bowl",
+              answer: "Atlanta Falcons",
+              choices: "Atlanta Falcons, New England Patriots, Green Bay Packers, ",
+              points: 300,
+            },
+            
+            {
+              questions: "What basketball player had 42 triple doubles in the 2016-2017 year",
+              answer: "Russell Westbrook",
+              choices: "Stephen Curry, Lebron James, Russell Westbrook, ",
+              points: 400,
+            },
+        
+            {
+              questions: "What team won 72 games in 2015-2016",
+              answer: "Warriors",
+              choices: "Jazz, Heat, Warriors, ",
+              points: 500,
+            },
+            {
+              questions: "Who is the best basketball player ever",
+              answer: "Jaden Poole",
+              choices: "Lebron James, Jaden Poole, Micheal Jordan, ",
+              points: 1000,
+            }
+        
+            
+        
+          ]
+          
