@@ -1,4 +1,5 @@
 const jeopardy = document.getElementById('jeopardy-song');
+jeopardy.play();
 
 let score = 0;
   const sportsQuestions = [
@@ -76,6 +77,208 @@ let score = 0;
     
 
   ]
+
+  const moviesQuestions = [
+    {
+      questions: "What is Adam Sandler best movie",
+      answer: "The Longest Yard ",
+      choices: "Big Daddy, The Longest Yard,  Click, ",
+      points: 200,
+    },
+    {
+      questions: "What is the best mafia movie ",
+      answer: "Scareface",
+      choices: "God Father, The Town, Scareface, ",
+      points: 300,
+    },
+    
+    {
+      questions: "What movie was Denzel Washington a dirty cop",
+      answer: "Training Day",
+      choices: "Training Day, Man on fire, The Equalizer, ",
+      points: 400,
+    },
+
+    {
+      questions: "Best R-Rated marvel movie",
+      answer: "Logan",
+      choices: "Logan, Deadpool, Captain America, ",
+      points: 500,
+    },
+    {
+      questions: "Best Batman movie",
+      answer: "The Dark Knight",
+      choices: "The Dark Knight, The Dark Knight rises, Batman Begins, ",
+      points: 1000,
+    }
+
+    
+
+  ]
+  const TvQuestions = [
+    {
+      questions: "Best Cartoon on Nick",
+      answer: "Spongebob ",
+      choices: "Spongebob, Kenan and Kel,  Rugrats, ",
+      points: 200,
+    },
+    {
+      questions: "What is the show where a girl game reasons for suicide ",
+      answer: "13 reasons",
+      choices: "Riverdale, Stranger things, 13 reasons, ",
+      points: 300,
+    },
+    
+    {
+      questions: "What movie was Denzel Washington a dirty cop",
+      answer: "Training Day",
+      choices: "Training Day, Man on fire, The Equalizer, ",
+      points: 400,
+    },
+
+    {
+      questions: "Best R-Rated marvel movie",
+      answer: "Logan",
+      choices: "Logan, Deadpool, Captain America, ",
+      points: 500,
+    },
+    {
+      questions: "Best Batman movie",
+      answer: "The Dark Knight",
+      choices: "The Dark Knight, The Dark Knight rises, Batman Begins, ",
+      points: 1000,
+    }
+
+    
+
+  ]
+  $('.Tv').on('click', function () {
+    
+    const y = prompt(TvQuestions[0].questions,);
+  if(y === TvQuestions[0].answer) {
+    window.alert('Correct')
+    score += 200;
+    $('.scoreSheet').html(score);
+    
+    
+    
+  } else {
+    window.alert('incorrect')
+    score -= 200;
+    $('.scoreSheet').html(score);
+  
+      }
+    
+    });
+
+
+
+
+  $('.movies').on('click', function () {
+    
+    const y = prompt(moviesQuestions[0].questions,);
+  if(y === moviesQuestions[0].answer) {
+    window.alert('Correct')
+    score += 200;
+    $('.scoreSheet').html(score);
+    
+    
+    
+  } else {
+    window.alert('incorrect')
+    score -= 200;
+    $('.scoreSheet').html(score);
+  
+      }
+    
+    });
+
+    $('.movies2').on('click', function () {
+      
+      const y = prompt(moviesQuestions[1].questions,);
+    if(y === moviesQuestions[1].answer) {
+      window.alert('Correct')
+      score += 200;
+      $('.scoreSheet').html(score);
+      
+      
+      
+    } else {
+      window.alert('incorrect')
+      score -= 200;
+      $('.scoreSheet').html(score);
+    
+        }
+      
+      });
+  
+      $('.movies3').on('click', function () {
+        
+        const y = prompt(moviesQuestions[2].questions,);
+      if(y === moviesQuestions[2].answer) {
+        window.alert('Correct')
+        score += 200;
+        $('.scoreSheet').html(score);
+        
+        
+        
+      } else {
+        window.alert('incorrect')
+        score -= 200;
+        $('.scoreSheet').html(score);
+      
+          }
+        
+        });
+
+        $('.movies4').on('click', function () {
+          
+          const y = prompt(moviesQuestions[3].questions,);
+        if(y === moviesQuestions[3].answer) {
+          window.alert('Correct')
+          score += 200;
+          $('.scoreSheet').html(score);
+          
+          
+          
+        } else {
+          window.alert('incorrect')
+          score -= 200;
+          $('.scoreSheet').html(score);
+        
+            }
+          
+          });
+  
+          $('.movies5').on('click', function () {
+            
+            const y = prompt(moviesQuestions[4].questions,);
+          if(y === moviesQuestions[4].answer) {
+            window.alert('Correct')
+            score += 200;
+            $('.scoreSheet').html(score);
+            
+            
+            
+          } else {
+            window.alert('incorrect')
+            score -= 200;
+            $('.scoreSheet').html(score);
+          
+              }
+            
+            });
+          
+      
+  
+
+
+
+
+
+
+  
+  
   
 
 
@@ -86,6 +289,7 @@ if(y === sportsQuestions[0].answer) {
   window.alert('Correct')
   score += 200;
   $('.scoreSheet').html(score);
+  
   
   
 } else {
@@ -112,7 +316,6 @@ if(y === sportsQuestions[0].answer) {
     $('.scoreSheet').html(score);
   
       }
-      const jeopardy = (time, sound = true)
     });
 
 
@@ -180,3 +383,67 @@ if(y === sportsQuestions[0].answer) {
             $('.scoreSheet').html(score);
           }
             });
+
+            $('.music2').on('click', function () {
+              
+              const y = prompt(musicQuestions[1].questions);
+            if(y === musicQuestions[1].answer) {
+              window.alert('Correct')
+              score += 300;
+              $('.scoreSheet').html(score);
+              
+              
+            } else {
+              window.alert('incorrect')
+              score -= 300;
+              $('.scoreSheet').html(score);
+            }
+              });
+              $('.music3').on('click', function () {
+                
+                const y = prompt(musicQuestions[2].questions);
+              if(y === musicQuestions[2].answer) {
+                window.alert('Correct')
+                score += 400;
+                $('.scoreSheet').html(score);
+                
+                
+              } else {
+                window.alert('incorrect')
+                score -= 400;
+                $('.scoreSheet').html(score);
+              }
+                });
+
+                $('.music4').on('click', function () {
+                  
+                  const y = prompt(musicQuestions[3].questions);
+                if(y === musicQuestions[3].answer) {
+                  window.alert('Correct')
+                  score += 500;
+                  $('.scoreSheet').html(score);
+                  
+                  
+                } else {
+                  window.alert('incorrect')
+                  score -= 500;
+                  $('.scoreSheet').html(score);
+                }
+                  });
+
+                  $('.music5').on('click', function () {
+                    
+                    const y = prompt(musicQuestions[4].questions);
+                  if(y === musicQuestions[4].answer) {
+                    window.alert('Correct')
+                    score += 1000;
+                    $('.scoreSheet').html(score);
+                    
+                    
+                  } else {
+                    window.alert('incorrect')
+                    score -= 1000;
+                    $('.scoreSheet').html(score);
+                  }
+                    });
+
