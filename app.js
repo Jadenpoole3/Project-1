@@ -152,6 +152,139 @@ let score = 0;
     
 
   ]
+
+  const songsQuestions = [
+    {
+      questions: "Cause its a thriller",
+      answer: "Thriller ",
+      choices: "Billy Jean, Thriller,  Bad, ",
+      points: 200,
+    },
+    {
+      questions: "Baby pull me closer in the backseat over rover ",
+      answer: "Closer",
+      choices: "Closer, Power, 444, ",
+      points: 300,
+    },
+    
+    {
+      questions: "I'm not black i'm OJ... Ok",
+      answer: "The Story of Oj",
+      choices: "444, hotline, closer, ",
+      points: 400,
+    },
+
+    {
+      questions: "You dont have to say what you did i found out about himmmm",
+      answer: "Cry me a River",
+      choices: "Cry me a River, Bye, ",
+      points: 500,
+    },
+    {
+      questions: "In New York I milly rock hide in my sock",
+      answer: "Magnolia",
+      choices: "Magnolia, Drake, Flex, ",
+      points: 1000,
+    }
+
+    
+
+  ]
+
+  $('.song').on('click', function () {
+    
+    const y = prompt(songsQuestions[0].questions,);
+  if(y === songsQuestions[0].answer) {
+    window.alert('Correct')
+    score += 200;
+    $('.scoreSheet').html(score);
+    
+    
+    
+  } else {
+    window.alert('incorrect')
+    score -= 200;
+    $('.scoreSheet').html(score);
+  
+      }
+    
+    });
+
+    $('.song1').on('click', function () {
+      
+      const y = prompt(songsQuestions[1].questions,);
+    if(y === songsQuestions[1].answer) {
+      window.alert('Correct')
+      score += 300;
+      $('.scoreSheet').html(score);
+      
+      
+      
+    } else {
+      window.alert('incorrect')
+      score -= 300;
+      $('.scoreSheet').html(score);
+    
+        }
+      
+      });
+      $('.song2').on('click', function () {
+        
+        const y = prompt(songsQuestions[2].questions,);
+      if(y === songsQuestions[2].answer) {
+        window.alert('Correct')
+        score += 400;
+        $('.scoreSheet').html(score);
+        
+        
+        
+      } else {
+        window.alert('incorrect')
+        score -= 400;
+        $('.scoreSheet').html(score);
+      
+          }
+        
+        });
+        $('.song3').on('click', function () {
+          
+          const y = prompt(songsQuestions[3].questions,);
+        if(y === songsQuestions[3].answer) {
+          window.alert('Correct')
+          score += 500;
+          $('.scoreSheet').html(score);
+          
+          
+          
+        } else {
+          window.alert('incorrect')
+          score -= 500;
+          $('.scoreSheet').html(score);
+        
+            }
+          
+          });
+          $('.song4').on('click', function () {
+            
+            const y = prompt(songsQuestions[4].questions,);
+          if(y === songsQuestions[4].answer) {
+            window.alert('Correct')
+            score += 1000;
+            $('.scoreSheet').html(score);
+            
+            
+            
+          } else {
+            window.alert('incorrect')
+            score -= 1000;
+            $('.scoreSheet').html(score);
+          
+              }
+            
+            });
+           
+
+
   $('.Tv').on('click', function () {
     
     const y = prompt(TvQuestions[0].questions,);
