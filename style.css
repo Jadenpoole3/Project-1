@@ -1,7 +1,7 @@
 header{
     display: flex;
 justify-content: center;
-color: blue;
+color:yellow;
 
 }
 
@@ -14,7 +14,7 @@ body {
 h1{
     display: flex;
     justify-content: center;
-    color: #15058A;
+    color:yellow;
     
 }
 

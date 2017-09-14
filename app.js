@@ -1,7 +1,8 @@
 const jeopardy = document.getElementById('jeopardy-song');
-jeopardy.play();
+const thriller = document.getElementById('thriller');
+const cry = document.getElementById('cry');
+ jeopardy.play();
 
- 
 
 let score = 0;
   const sportsQuestions = [
@@ -196,6 +197,15 @@ let score = 0;
 
   $('.song').on('click', function () {
     
+    jeopardy.pause();
+    thriller.play();
+    setTimeout(function() {
+      thriller.pause();
+      thriller.currentTime = 0;
+
+    }, 5000)
+
+    
     
    
     const y = prompt(songsQuestions[0].questions,);
@@ -254,6 +264,15 @@ let score = 0;
         
         });
         $('.song4').on('click', function () {
+
+
+          cry.currentTime = 40;
+          cry.play();
+          cry.currentTime = 40;
+          setTimeout(function() {
+            cry.pause();
+            cry.currentTime = 40;
+          }, 5000)
           
           const y = prompt(songsQuestions[3].questions,);
         if(y === songsQuestions[3].answer) {
