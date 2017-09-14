@@ -203,7 +203,7 @@ let score = 0;
     
     jeopardy.pause();
     console.log(thriller)
-    thriller.currentTime = 30;
+    thriller.currentTime = 200;
     thriller.play();
     setTimeout(function() {
       thriller.pause();
@@ -220,7 +220,10 @@ let score = 0;
       $('.scoreSheet').html(score);
     
         }
+        $('.song').css("background-color", "yellow");
     }, 5000)
+
+    
 
     
     
