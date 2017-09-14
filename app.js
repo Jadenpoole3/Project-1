@@ -130,22 +130,22 @@ let score = 0;
     },
     
     {
-      questions: "What movie was Denzel Washington a dirty cop",
-      answer: "Training Day",
-      choices: "Training Day, Man on fire, The Equalizer, ",
+      questions: "What is the best anime",
+      answer: "Dragon ball Z",
+      choices: "Dragon ball Z, Naruto, Baruto, ",
       points: 400,
     },
 
     {
-      questions: "Best R-Rated marvel movie",
-      answer: "Logan",
-      choices: "Logan, Deadpool, Captain America, ",
+      questions: "What is the highest rated tv show of the 90s",
+      answer: "Seinfield",
+      choices: "Friends, Seinfield, Ben, ",
       points: 500,
     },
     {
-      questions: "Best Batman movie",
-      answer: "The Dark Knight",
-      choices: "The Dark Knight, The Dark Knight rises, Batman Begins, ",
+      questions: "Who is peter griffin baby son",
+      answer: "Stewie",
+      choices: "The Chicken, The Dog, Stewie, ",
       points: 1000,
     }
 
@@ -171,13 +171,88 @@ let score = 0;
     
     });
 
+    $('.Tv2').on('click', function () {
+      
+      const y = prompt(TvQuestions[1].questions,);
+    if(y === TvQuestions[1].answer) {
+      window.alert('Correct')
+      score += 200;
+      $('.scoreSheet').html(score);
+      
+      
+      
+    } else {
+      window.alert('incorrect')
+      score -= 200;
+      $('.scoreSheet').html(score);
+    
+        }
+      
+      });
+  
+      $('.Tv3').on('click', function () {
+        
+        const y = prompt(TvQuestions[2].questions,);
+      if(y === TvQuestions[2].answer) {
+        window.alert('Correct')
+        score += 200;
+        $('.scoreSheet').html(score);
+        
+        
+        
+      } else {
+        window.alert('incorrect')
+        score -= 200;
+        $('.scoreSheet').html(score);
+      
+          }
+        
+        });
+    
 
-
+        $('.Tv4').on('click', function () {
+          
+          const y = prompt(TvQuestions[3].questions,);
+        if(y === TvQuestions[3].answer) {
+          window.alert('Correct')
+          score += 200;
+          $('.scoreSheet').html(score);
+          
+          
+          
+        } else {
+          window.alert('incorrect')
+          score -= 200;
+          $('.scoreSheet').html(score);
+        
+            }
+          
+          });
+      
+          $('.Tv5').on('click', function () {
+            
+            const y = prompt(TvQuestions[4].questions,);
+          if(y === TvQuestions[4].answer) {
+            window.alert('Correct')
+            score += 200;
+            $('.scoreSheet').html(score);
+            
+            
+            
+          } else {
+            window.alert('incorrect')
+            score -= 200;
+            $('.scoreSheet').html(score);
+          
+              }
+            
+            });
+        
 
   $('.movies').on('click', function () {
     
-    const y = prompt(moviesQuestions[0].questions,);
-  if(y === moviesQuestions[0].answer) {
+    const y = prompt(moviesQuestions[5].questions,);
+  if(y === moviesQuestions[5].answer) {
     window.alert('Correct')
     score += 200;
     $('.scoreSheet').html(score);
