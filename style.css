@@ -6,7 +6,9 @@ color: blue;
 }
 
 body {
-    background-color: yellow;
+    background-image: url("https://images2.alphacoders.com/581/581068.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1{
@@ -47,5 +49,12 @@ td {
 
 }
 
+h2 {
+    color: yellow;
+}
+
+.scoreSheet {
+    color: yellow;
+}
 
     

@@ -1,6 +1,8 @@
 const jeopardy = document.getElementById('jeopardy-song');
 jeopardy.play();
 
+ 
+
 let score = 0;
   const sportsQuestions = [
     {
@@ -159,6 +161,7 @@ let score = 0;
       answer: "Thriller ",
       choices: "Billy Jean, Thriller,  Bad, ",
       points: 200,
+      correctMedia: "thats.it.webp"
     },
     {
       questions: "Baby pull me closer in the backseat over rover ",
@@ -193,11 +196,14 @@ let score = 0;
 
   $('.song').on('click', function () {
     
+    
+   
     const y = prompt(songsQuestions[0].questions,);
   if(y === songsQuestions[0].answer) {
     window.alert('Correct')
     score += 200;
     $('.scoreSheet').html(score);
+    
     
     
     
@@ -210,7 +216,8 @@ let score = 0;
     
     });
 
-    $('.song1').on('click', function () {
+    $('.song2').on('click', function () {
+
       
       const y = prompt(songsQuestions[1].questions,);
     if(y === songsQuestions[1].answer) {
@@ -228,7 +235,7 @@ let score = 0;
         }
       
       });
-      $('.song2').on('click', function () {
+      $('.song3').on('click', function () {
         
         const y = prompt(songsQuestions[2].questions,);
       if(y === songsQuestions[2].answer) {
@@ -246,7 +253,7 @@ let score = 0;
           }
         
         });
-        $('.song3').on('click', function () {
+        $('.song4').on('click', function () {
           
           const y = prompt(songsQuestions[3].questions,);
         if(y === songsQuestions[3].answer) {
@@ -264,13 +271,16 @@ let score = 0;
             }
           
           });
-          $('.song4').on('click', function () {
+         
+          $('.song5').on('click', function () {
             
+          
             const y = prompt(songsQuestions[4].questions,);
           if(y === songsQuestions[4].answer) {
             window.alert('Correct')
             score += 1000;
             $('.scoreSheet').html(score);
+           
             
             
             
@@ -477,17 +487,6 @@ let score = 0;
             
             });
           
-      
-  
-
-
-
-
-
-
-  
-  
-  
 
 
 $('.sports').on('click', function () {
@@ -497,8 +496,8 @@ if(y === sportsQuestions[0].answer) {
   window.alert('Correct')
   score += 200;
   $('.scoreSheet').html(score);
-  
-  
+
+
   
 } else {
   window.alert('incorrect')
@@ -515,6 +514,7 @@ if(y === sportsQuestions[0].answer) {
     window.alert('Correct')
     score += 300;
     $('.scoreSheet').html(score);
+    
 
     
     
@@ -524,6 +524,8 @@ if(y === sportsQuestions[0].answer) {
     $('.scoreSheet').html(score);
   
       }
+      $('.sports2').css("background-color", "black");
+      
     });
 
 
@@ -533,6 +535,7 @@ if(y === sportsQuestions[0].answer) {
       window.alert('Correct')
       score += 400;
       $('.scoreSheet').html(score);
+
       
       
     } else {
@@ -654,4 +657,3 @@ if(y === sportsQuestions[0].answer) {
                     $('.scoreSheet').html(score);
                   }
                     });
-
