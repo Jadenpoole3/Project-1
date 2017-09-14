@@ -1,6 +1,11 @@
 const jeopardy = document.getElementById('jeopardy-song');
 const thriller = document.getElementById('thriller');
 const cry = document.getElementById('cry');
+const magnolia = document.getElementById('magnolia');
+const chainsmokers = document.getElementById('chainsmokers');
+const september= document.getElementById('september');
+
+
  jeopardy.play();
 
 
@@ -162,19 +167,18 @@ let score = 0;
       answer: "Thriller ",
       choices: "Billy Jean, Thriller,  Bad, ",
       points: 200,
-      correctMedia: "thats.it.webp"
     },
     {
-      questions: "Baby pull me closer in the backseat over rover ",
+      questions: "Baby pull me closer in the backseat of your rover ",
       answer: "Closer",
       choices: "Closer, Power, 444, ",
       points: 300,
     },
     
     {
-      questions: "I'm not black i'm OJ... Ok",
-      answer: "The Story of Oj",
-      choices: "444, hotline, closer, ",
+      questions: "Ba de ya - dancing in September... Ba de ya - never was a cloudy day",
+      answer: "September",
+      choices: "September, hotline, closer, ",
       points: 400,
     },
 
@@ -198,37 +202,41 @@ let score = 0;
   $('.song').on('click', function () {
     
     jeopardy.pause();
+    console.log(thriller)
+    thriller.currentTime = 30;
     thriller.play();
     setTimeout(function() {
       thriller.pause();
-      thriller.currentTime = 0;
 
+    const y = prompt(songsQuestions[0].questions,);
+    if(y === songsQuestions[0].answer) {
+      window.alert('Correct')
+      score += 200;
+      $('.scoreSheet').html(score);
+      
+    } else {
+      window.alert('incorrect')
+      score -= 200;
+      $('.scoreSheet').html(score);
+    
+        }
     }, 5000)
 
     
     
    
-    const y = prompt(songsQuestions[0].questions,);
-  if(y === songsQuestions[0].answer) {
-    window.alert('Correct')
-    score += 200;
-    $('.scoreSheet').html(score);
-    
-    
-    
-    
-  } else {
-    window.alert('incorrect')
-    score -= 200;
-    $('.scoreSheet').html(score);
-  
-      }
     
     });
 
     $('.song2').on('click', function () {
+    
+      jeopardy.pause();
+      chainsmokers.currentTime = 60;
+      chainsmokers.play();
+        setTimeout(function() {
+          chainsmokers.pause();
 
-      
+
       const y = prompt(songsQuestions[1].questions,);
     if(y === songsQuestions[1].answer) {
       window.alert('Correct')
@@ -243,9 +251,16 @@ let score = 0;
       $('.scoreSheet').html(score);
     
         }
+      }, 5000)
       
       });
       $('.song3').on('click', function () {
+
+        jeopardy.pause();
+        september.currentTime = 50;
+        september.play();
+          setTimeout(function() {
+            september.pause();
         
         const y = prompt(songsQuestions[2].questions,);
       if(y === songsQuestions[2].answer) {
@@ -261,54 +276,65 @@ let score = 0;
         $('.scoreSheet').html(score);
       
           }
+        }, 5000)
         
         });
         $('.song4').on('click', function () {
 
-
-          cry.currentTime = 40;
-          cry.play();
-          cry.currentTime = 40;
+        jeopardy.pause();
+        cry.currentTime = 40;
+        cry.play();
           setTimeout(function() {
             cry.pause();
-            cry.currentTime = 40;
+
+            const y = prompt(songsQuestions[3].questions,);
+            if(y === songsQuestions[3].answer) {
+              window.alert('Correct')
+              score += 500;
+              $('.scoreSheet').html(score);
+              
+              
+              
+            } else {
+              window.alert('incorrect')
+              score -= 500;
+              $('.scoreSheet').html(score);
+            
+                }
+
+            
           }, 5000)
           
-          const y = prompt(songsQuestions[3].questions,);
-        if(y === songsQuestions[3].answer) {
-          window.alert('Correct')
-          score += 500;
-          $('.scoreSheet').html(score);
-          
-          
-          
-        } else {
-          window.alert('incorrect')
-          score -= 500;
-          $('.scoreSheet').html(score);
-        
-            }
           
           });
          
           $('.song5').on('click', function () {
             
-          
-            const y = prompt(songsQuestions[4].questions,);
-          if(y === songsQuestions[4].answer) {
-            window.alert('Correct')
-            score += 1000;
-            $('.scoreSheet').html(score);
-           
+         jeopardy.pause();
+            magnolia.currentTime = 5;
+            magnolia.play();
+            setTimeout(function() {
+              magnolia.pause();
+              
+              const y = prompt(songsQuestions[4].questions,);
+              if(y === songsQuestions[4].answer) {
+                window.alert('Correct')
+                score += 1000;
+                $('.scoreSheet').html(score);
+               
+                
+                
+                
+              } else {
+                window.alert('incorrect')
+                score -= 1000;
+                $('.scoreSheet').html(score);
+              
+                  }
+
+
+            }, 5000)
             
-            
-            
-          } else {
-            window.alert('incorrect')
-            score -= 1000;
-            $('.scoreSheet').html(score);
-          
-              }
             
             });
            
