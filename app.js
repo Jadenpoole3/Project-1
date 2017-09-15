@@ -57,8 +57,8 @@ let score = 0;
       points: 200,
     },
     {
-      questions: "What is the album of the year ",
-      answer: "Damn",
+      questions: "What artist made a song with Imagine dragons and performed with in 2014",
+      answer: "Kendrick Lam",
       choices: "Damn, More Life, Cozy tapes, ",
       points: 300,
     },
@@ -77,9 +77,9 @@ let score = 0;
       points: 500,
     },
     {
-      questions: "Who is the best artist alive",
-      answer: "Jaden Poole",
-      choices: "Jay-z, Jaden Poole, Slick Rick, ",
+      questions: "Who is the best Nysnc memeber",
+      answer: "Justin Timberlake",
+      choices: "Jay-z, Justin Timberlake, Slick Rick, ",
       points: 1000,
     }
 
