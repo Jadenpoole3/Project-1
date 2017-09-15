@@ -96,8 +96,8 @@ let score = 0;
     },
     {
       questions: "What is the best mafia movie ",
-      answer: "Scareface",
-      choices: "God Father, The Town, Scareface, ",
+      answer: "Scarface",
+      choices: "God Father, The Town, Scarface, ",
       points: 300,
     },
     
@@ -140,19 +140,19 @@ let score = 0;
     
     {
       questions: "What is the best anime",
-      answer: "Dragon Ball Z, dragon ball z",
+      answer: "Dragon Ball Z",
       choices: "Dragon ball Z, Naruto, Baruto, ",
       points: 400,
     },
 
     {
       questions: "What is the highest rated tv show of the 90s",
-      answer: "Seinfield",
-      choices: "Friends, Seinfield, Ben, ",
+      answer: "Seinfeld",
+      choices: "Friends, Seinfeld, Ben, ",
       points: 500,
     },
     {
-      questions: "Who is peter griffin baby son",
+      questions: "Who is Peter Griffin's baby son",
       answer: "Stewie",
       choices: "The Chicken, The Dog, Stewie, ",
       points: 1000,
@@ -165,7 +165,7 @@ let score = 0;
   const songsQuestions = [
     {
       questions: "Cause its a thriller",
-      answer: "Thriller ",
+      answer: "Thriller",
       choices: "Billy Jean, Thriller,  Bad, ",
       points: 200, 
       correctMedia:"thats.it.webp"
@@ -186,8 +186,8 @@ let score = 0;
 
     {
       questions: "You dont have to say what you did ",
-      answer: "Cry me a River",
-      choices: "Cry me a River, Bye, ",
+      answer: "Cry me a river",
+      choices: "Cry me a river, Bye, ",
       points: 500,
     },
     {
