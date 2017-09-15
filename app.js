@@ -208,7 +208,7 @@ let score = 0;
     setTimeout(function() {
       thriller.pause();
 
-    const y = prompt(songsQuestions[0].questions,);
+    const y = prompt(songsQuestions[0].questions, type.songsChoices[0]);
     if(y === songsQuestions[0].answer) {
       window.alert('Correct')
       score += 200;
@@ -254,6 +254,7 @@ let score = 0;
       $('.scoreSheet').html(score);
     
         }
+        $('.song2').css("background-color", "yellow");
       }, 5000)
       
       });
@@ -279,6 +280,7 @@ let score = 0;
         $('.scoreSheet').html(score);
       
           }
+          $('.song3').css("background-color", "yellow");
         }, 5000)
         
         });
@@ -304,7 +306,7 @@ let score = 0;
               $('.scoreSheet').html(score);
             
                 }
-
+                $('.song4').css("background-color", "yellow");
             
           }, 5000)
           
@@ -335,6 +337,7 @@ let score = 0;
               
                   }
 
+                  $('.song5').css("background-color", "yellow");
 
             }, 5000)
             
@@ -359,7 +362,7 @@ let score = 0;
     $('.scoreSheet').html(score);
   
       }
-    
+      $('.Tv').css("background-color", "yellow");
     });
 
     $('.Tv2').on('click', function () {
@@ -378,7 +381,7 @@ let score = 0;
       $('.scoreSheet').html(score);
     
         }
-      
+        $('.Tv2').css("background-color", "yellow");
       });
   
       $('.Tv3').on('click', function () {
@@ -397,7 +400,7 @@ let score = 0;
         $('.scoreSheet').html(score);
       
           }
-        
+          $('.Tv3').css("background-color", "yellow");
         });
     
 
@@ -417,7 +420,7 @@ let score = 0;
           $('.scoreSheet').html(score);
         
             }
-          
+            $('.Tv4').css("background-color", "yellow");
           });
       
           $('.Tv5').on('click', function () {
@@ -436,7 +439,7 @@ let score = 0;
             $('.scoreSheet').html(score);
           
               }
-            
+              $('.Tv5').css("background-color", "yellow");
             });
         
 
@@ -456,7 +459,7 @@ let score = 0;
     $('.scoreSheet').html(score);
   
       }
-    
+      $('.movies').css("background-color", "yellow");
     });
 
     $('.movies2').on('click', function () {
@@ -475,7 +478,7 @@ let score = 0;
       $('.scoreSheet').html(score);
     
         }
-      
+        $('.movies2').css("background-color", "yellow");
       });
   
       $('.movies3').on('click', function () {
@@ -494,7 +497,7 @@ let score = 0;
         $('.scoreSheet').html(score);
       
           }
-        
+          $('.movies3').css("background-color", "yellow");
         });
 
         $('.movies4').on('click', function () {
@@ -513,7 +516,7 @@ let score = 0;
           $('.scoreSheet').html(score);
         
             }
-          
+            $('.movies4').css("background-color", "yellow");
           });
   
           $('.movies5').on('click', function () {
@@ -532,7 +535,7 @@ let score = 0;
             $('.scoreSheet').html(score);
           
               }
-            
+              $('.movies5').css("background-color", "yellow");
             });
           
 
@@ -553,7 +556,7 @@ if(y === sportsQuestions[0].answer) {
   $('.scoreSheet').html(score);
 
     }
-  
+    $('.sports').css("background-color", "yellow");
   });
 
   $('.sports2').on('click', function () {
@@ -592,6 +595,7 @@ if(y === sportsQuestions[0].answer) {
       $('.scoreSheet').html(score);
     
         }
+        $('.sports3').css("background-color", "yellow");
       });
   
       $('.sports4').on('click', function () {
@@ -608,6 +612,7 @@ if(y === sportsQuestions[0].answer) {
         $('.scoreSheet').html(score);
       
           }
+          $('.sports4').css("background-color", "yellow");
         });
     
         $('.sports5').on('click', function () {
@@ -624,6 +629,7 @@ if(y === sportsQuestions[0].answer) {
           $('.scoreSheet').html(score);
         
             }
+            $('.sports5').css("background-color", "yellow");
           });
 
           
@@ -641,6 +647,7 @@ if(y === sportsQuestions[0].answer) {
             score -= 200;
             $('.scoreSheet').html(score);
           }
+          $('.music').css("background-color", "yellow");
             });
 
             $('.music2').on('click', function () {
@@ -657,6 +664,7 @@ if(y === sportsQuestions[0].answer) {
               score -= 300;
               $('.scoreSheet').html(score);
             }
+            $('.music2').css("background-color", "yellow");
               });
               $('.music3').on('click', function () {
                 
@@ -672,6 +680,7 @@ if(y === sportsQuestions[0].answer) {
                 score -= 400;
                 $('.scoreSheet').html(score);
               }
+              $('.music3').css("background-color", "yellow");
                 });
 
                 $('.music4').on('click', function () {
@@ -688,6 +697,7 @@ if(y === sportsQuestions[0].answer) {
                   score -= 500;
                   $('.scoreSheet').html(score);
                 }
+                $('.music4').css("background-color", "yellow");
                   });
 
                   $('.music5').on('click', function () {
@@ -704,4 +714,5 @@ if(y === sportsQuestions[0].answer) {
                     score -= 1000;
                     $('.scoreSheet').html(score);
                   }
+                  $('.music5').css("background-color", "yellow");
                     });
