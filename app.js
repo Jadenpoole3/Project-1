@@ -91,7 +91,7 @@ let score = 0;
     {
       questions: "What movie is Simba from",
       answer: "Lion King",
-      choices: "Cinderella, Lion King ,  Peter Pan, ",
+      choices: "Cinderella, Lion King,  Peter Pan, ",
       points: 200,
     },
     {
@@ -456,7 +456,7 @@ let score = 0;
   $('.movies').on('click', function () {
     
     const y = prompt(moviesQuestions[0].questions,`Type${moviesQuestions[0].choices}`);
-  if(y === moviesQuestions[5].answer) {
+  if(y === moviesQuestions[0].answer) {
     window.alert('Correct')
     score += 200;
     $('.scoreSheet').html(score);
