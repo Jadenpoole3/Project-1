@@ -6,7 +6,8 @@ const chainsmokers = document.getElementById('chainsmokers');
 const september= document.getElementById('september');
 
 
- jeopardy.play();
+
+ 
 
 
 let score = 0;
@@ -166,7 +167,8 @@ let score = 0;
       questions: "Cause its a thriller",
       answer: "Thriller ",
       choices: "Billy Jean, Thriller,  Bad, ",
-      points: 200,
+      points: 200, 
+      correctMedia:"thats.it.webp"
     },
     {
       questions: "Baby pull me closer in the backseat of your rover ",
@@ -198,6 +200,7 @@ let score = 0;
     
 
   ]
+  
 
   $('.song').on('click', function () {
     
@@ -208,7 +211,10 @@ let score = 0;
     setTimeout(function() {
       thriller.pause();
 
-    const y = prompt(songsQuestions[0].questions, type.songsChoices[0]);
+      
+//const y = prompt(footballQuestions[0].question, `Type ${footballQuestions[0].choices}`);
+
+    const y = prompt(songsQuestions[0].question, `Type${songsQuestions[0].choices}`);
     if(y === songsQuestions[0].answer) {
       window.alert('Correct')
       score += 200;
@@ -240,7 +246,7 @@ let score = 0;
           chainsmokers.pause();
 
 
-      const y = prompt(songsQuestions[1].questions,);
+      const y = prompt(songsQuestions[1].questions,`Type${songsQuestions[1].choices}`);
     if(y === songsQuestions[1].answer) {
       window.alert('Correct')
       score += 300;
@@ -266,7 +272,7 @@ let score = 0;
           setTimeout(function() {
             september.pause();
         
-        const y = prompt(songsQuestions[2].questions,);
+        const y = prompt(songsQuestions[2].questions,`Type${songsQuestions[2].choices}`);
       if(y === songsQuestions[2].answer) {
         window.alert('Correct')
         score += 400;
