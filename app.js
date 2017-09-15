@@ -298,7 +298,7 @@ let score = 0;
           setTimeout(function() {
             cry.pause();
 
-            const y = prompt(songsQuestions[3].questions,);
+            const y = prompt(songsQuestions[3].questions,`Type${songsQuestions[3].choices}`);
             if(y === songsQuestions[3].answer) {
               window.alert('Correct')
               score += 500;
@@ -327,7 +327,7 @@ let score = 0;
             setTimeout(function() {
               magnolia.pause();
               
-              const y = prompt(songsQuestions[4].questions,);
+              const y = prompt(songsQuestions[4].questions,`Type${songsQuestions[4].choices}`);
               if(y === songsQuestions[4].answer) {
                 window.alert('Correct')
                 score += 1000;
@@ -354,7 +354,7 @@ let score = 0;
 
   $('.Tv').on('click', function () {
     
-    const y = prompt(TvQuestions[0].questions,);
+    const y = prompt(TvQuestions[0].questions,`Type${TvQuestions[0].choices}`);
   if(y === TvQuestions[0].answer) {
     window.alert('Correct')
     score += 200;
@@ -373,7 +373,7 @@ let score = 0;
 
     $('.Tv2').on('click', function () {
       
-      const y = prompt(TvQuestions[1].questions,);
+      const y = prompt(TvQuestions[1].questions,`Type${TvQuestions[1].choices}`);
     if(y === TvQuestions[1].answer) {
       window.alert('Correct')
       score += 200;
@@ -392,7 +392,7 @@ let score = 0;
   
       $('.Tv3').on('click', function () {
         
-        const y = prompt(TvQuestions[2].questions,);
+        const y = prompt(TvQuestions[2].questions,)`Type${TvQuestions[2].choices}`;
       if(y === TvQuestions[2].answer) {
         window.alert('Correct')
         score += 200;
@@ -412,7 +412,7 @@ let score = 0;
 
         $('.Tv4').on('click', function () {
           
-          const y = prompt(TvQuestions[3].questions,);
+          const y = prompt(TvQuestions[3].questions,`Type${TvQuestions[3].choices}`);
         if(y === TvQuestions[3].answer) {
           window.alert('Correct')
           score += 200;
@@ -431,7 +431,7 @@ let score = 0;
       
           $('.Tv5').on('click', function () {
             
-            const y = prompt(TvQuestions[4].questions,);
+            const y = prompt(TvQuestions[4].questions,`Type${TvQuestions[4].choices}`);
           if(y === TvQuestions[4].answer) {
             window.alert('Correct')
             score += 200;
@@ -451,7 +451,7 @@ let score = 0;
 
   $('.movies').on('click', function () {
     
-    const y = prompt(moviesQuestions[5].questions,);
+    const y = prompt(moviesQuestions[0].questions,`Type${moviesQuestions[0].choices}`);
   if(y === moviesQuestions[5].answer) {
     window.alert('Correct')
     score += 200;
@@ -470,7 +470,7 @@ let score = 0;
 
     $('.movies2').on('click', function () {
       
-      const y = prompt(moviesQuestions[1].questions,);
+      const y = prompt(moviesQuestions[1].questions,`Type${moviesQuestions[1].choices}`);
     if(y === moviesQuestions[1].answer) {
       window.alert('Correct')
       score += 200;
@@ -489,7 +489,7 @@ let score = 0;
   
       $('.movies3').on('click', function () {
         
-        const y = prompt(moviesQuestions[2].questions,);
+        const y = prompt(moviesQuestions[2].questions,`Type${moviesQuestions[2].choices}`);
       if(y === moviesQuestions[2].answer) {
         window.alert('Correct')
         score += 200;
@@ -508,7 +508,7 @@ let score = 0;
 
         $('.movies4').on('click', function () {
           
-          const y = prompt(moviesQuestions[3].questions,);
+          const y = prompt(moviesQuestions[3].questions,`Type${moviesQuestions[3].choices}`);
         if(y === moviesQuestions[3].answer) {
           window.alert('Correct')
           score += 200;
@@ -527,7 +527,7 @@ let score = 0;
   
           $('.movies5').on('click', function () {
             
-            const y = prompt(moviesQuestions[4].questions,);
+            const y = prompt(moviesQuestions[4].questions,`Type${moviesQuestions[4].choices}`);
           if(y === moviesQuestions[4].answer) {
             window.alert('Correct')
             score += 200;
@@ -548,7 +548,7 @@ let score = 0;
 
 $('.sports').on('click', function () {
   
-  const y = prompt(sportsQuestions[0].questions,);
+  const y = prompt(sportsQuestions[0].questions,`Type${sportsQuestions[0].choices}`);
 if(y === sportsQuestions[0].answer) {
   window.alert('Correct')
   score += 200;
@@ -566,7 +566,7 @@ if(y === sportsQuestions[0].answer) {
   });
 
   $('.sports2').on('click', function () {
-    const y = prompt(sportsQuestions[1].questions,);
+    const y = prompt(sportsQuestions[1].questions,`Type${sportsQuestions[1].choices}`);
   if(y === sportsQuestions[1].answer) {
     window.alert('Correct')
     score += 300;
@@ -587,7 +587,7 @@ if(y === sportsQuestions[0].answer) {
 
 
     $('.sports3').on('click', function () {
-      const y = prompt(sportsQuestions[2].questions,);
+      const y = prompt(sportsQuestions[2].questions,`Type${sportsQuestions[2].choices}`);
     if(y === sportsQuestions[2].answer) {
       window.alert('Correct')
       score += 400;
@@ -605,7 +605,7 @@ if(y === sportsQuestions[0].answer) {
       });
   
       $('.sports4').on('click', function () {
-        const y = prompt(sportsQuestions[3].questions,);
+        const y = prompt(sportsQuestions[3].questions,`Type${sportsQuestions[3].choices}`);
       if(y === sportsQuestions[3].answer) {
         window.alert('Correct')
         score += 500;
@@ -622,7 +622,7 @@ if(y === sportsQuestions[0].answer) {
         });
     
         $('.sports5').on('click', function () {
-          const y = prompt(sportsQuestions[4].questions,);
+          const y = prompt(sportsQuestions[4].questions,`Type${sportsQuestions[4].choices}`);
         if(y === sportsQuestions[4].answer) {
           window.alert('Correct')
           score += 1000;
@@ -641,7 +641,7 @@ if(y === sportsQuestions[0].answer) {
           
           $('.music').on('click', function () {
             
-            const y = prompt(musicQuestions[0].questions);
+            const y = prompt(musicQuestions[0].questions, `Type${musicQuestions[0].choices}`);
           if(y === musicQuestions[0].answer) {
             window.alert('Correct')
             score += 200;
@@ -658,7 +658,7 @@ if(y === sportsQuestions[0].answer) {
 
             $('.music2').on('click', function () {
               
-              const y = prompt(musicQuestions[1].questions);
+              const y = prompt(musicQuestions[1].questions `Type${musicQuestions[1].choices}`);
             if(y === musicQuestions[1].answer) {
               window.alert('Correct')
               score += 300;
@@ -674,7 +674,7 @@ if(y === sportsQuestions[0].answer) {
               });
               $('.music3').on('click', function () {
                 
-                const y = prompt(musicQuestions[2].questions);
+                const y = prompt(musicQuestions[2].questions, `Type${musicQuestions[2].choices}`);
               if(y === musicQuestions[2].answer) {
                 window.alert('Correct')
                 score += 400;
@@ -691,7 +691,7 @@ if(y === sportsQuestions[0].answer) {
 
                 $('.music4').on('click', function () {
                   
-                  const y = prompt(musicQuestions[3].questions);
+                  const y = prompt(musicQuestions[3].questions,`Type${musicQuestions[3].choices}`);
                 if(y === musicQuestions[3].answer) {
                   window.alert('Correct')
                   score += 500;
@@ -708,7 +708,7 @@ if(y === sportsQuestions[0].answer) {
 
                   $('.music5').on('click', function () {
                     
-                    const y = prompt(musicQuestions[4].questions);
+                    const y = prompt(musicQuestions[4].questions,`Type${musicQuestions[4].choices}`);
                   if(y === musicQuestions[4].answer) {
                     window.alert('Correct')
                     score += 1000;
