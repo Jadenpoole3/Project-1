@@ -72,12 +72,12 @@ let score = 0;
 
     {
       questions: "Who invented the moon walk",
-      answer: "Micheal Jackson",
-      choices: "Micheal Jackson, Rick James, Prince, ",
+      answer: "Michael Jackson",
+      choices: "Michael Jackson, Rick James, Prince, ",
       points: 500,
     },
     {
-      questions: "Who is the best Nysnc memeber",
+      questions: "Who is the best Nysnc member",
       answer: "Justin Timberlake",
       choices: "Jay-z, Justin Timberlake, Slick Rick, ",
       points: 1000,
@@ -126,7 +126,7 @@ let score = 0;
   ]
   const TvQuestions = [
     {
-      questions: "Best Cartoon on Nick",
+      questions: "Who lives in the Bikini Bottom?",
       answer: "Spongebob",
       choices: "Spongebob, Kenan and Kel,  Rugrats, ",
       points: 200,
@@ -141,7 +141,7 @@ let score = 0;
     {
       questions: "What is the best anime",
       answer: "Dragon Ball Z",
-      choices: "Dragon ball Z, Naruto, Baruto, ",
+      choices: "Dragon Ball Z, Naruto, One Piece, ",
       points: 400,
     },
 
@@ -393,10 +393,9 @@ let score = 0;
         }
         $('.Tv2').css("background-color", "yellow");
       });
-  
       $('.Tv3').on('click', function () {
         
-        const y = prompt(TvQuestions[2].questions,)`Type${TvQuestions[2].choices}`;
+        const y = prompt(TvQuestions[2].questions,`Type${TvQuestions[2].choices}`);
       if(y === TvQuestions[2].answer) {
         window.alert('Correct')
         score += 200;
