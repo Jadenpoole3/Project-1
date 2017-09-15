@@ -58,8 +58,8 @@ let score = 0;
     },
     {
       questions: "What artist made a song with Imagine dragons and performed with in 2014",
-      answer: "Kendrick Lam",
-      choices: "Damn, More Life, Cozy tapes, ",
+      answer: "Kendrick Lamar",
+      choices: "Kendrick Lamar, Beyonce, Kelly Clarkson, ",
       points: 300,
     },
     
@@ -89,9 +89,9 @@ let score = 0;
 
   const moviesQuestions = [
     {
-      questions: "What is Adam Sandler best movie",
-      answer: "The Longest Yard ",
-      choices: "Big Daddy, The Longest Yard,  Click, ",
+      questions: "What movie is Simba from",
+      answer: "Lion King",
+      choices: "Cinderella, Lion King ,  Peter Pan, ",
       points: 200,
     },
     {
