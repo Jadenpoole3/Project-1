@@ -57,7 +57,7 @@ let score = 0;
       points: 200,
     },
     {
-      questions: "What artist made a song with Imagine dragons and performed with in 2014",
+      questions: "What artist made a song with Imagine dragons and performed with them in 2014",
       answer: "Kendrick Lamar",
       choices: "Kendrick Lamar, Beyonce, Kelly Clarkson, ",
       points: 300,
@@ -127,7 +127,7 @@ let score = 0;
   const TvQuestions = [
     {
       questions: "Best Cartoon on Nick",
-      answer: "Spongebob ",
+      answer: "Spongebob",
       choices: "Spongebob, Kenan and Kel,  Rugrats, ",
       points: 200,
     },
@@ -140,7 +140,7 @@ let score = 0;
     
     {
       questions: "What is the best anime",
-      answer: "Dragon ball Z",
+      answer: "Dragon Ball Z, dragon ball z",
       choices: "Dragon ball Z, Naruto, Baruto, ",
       points: 400,
     },
@@ -185,7 +185,7 @@ let score = 0;
     },
 
     {
-      questions: "You dont have to say what you did i found out about himmmm",
+      questions: "You dont have to say what you did ",
       answer: "Cry me a River",
       choices: "Cry me a River, Bye, ",
       points: 500,
@@ -244,7 +244,7 @@ let score = 0;
       chainsmokers.play();
         setTimeout(function() {
           chainsmokers.pause();
-          jeopardy.play();
+          
 
 
       const y = prompt(songsQuestions[1].questions,`Type${songsQuestions[1].choices}`);
@@ -272,7 +272,7 @@ let score = 0;
         september.play();
           setTimeout(function() {
             september.pause();
-            jeopardy.play();
+            
         
         const y = prompt(songsQuestions[2].questions,`Type${songsQuestions[2].choices}`);
       if(y === songsQuestions[2].answer) {
@@ -293,13 +293,13 @@ let score = 0;
         
         });
         $('.song4').on('click', function () {
-
-        jeopardy.pause();
-        cry.currentTime = 40;
-        cry.play();
+          jeopardy.pause();   
+          cry.currentTime = 50;
+          cry.play();
           setTimeout(function() {
+        jeopardy.pause();
             cry.pause();
-            jeopardy.play();
+            
 
             const y = prompt(songsQuestions[3].questions,`Type${songsQuestions[3].choices}`);
             if(y === songsQuestions[3].answer) {
@@ -325,11 +325,11 @@ let score = 0;
           $('.song5').on('click', function () {
             
          jeopardy.pause();
-            unforget.currentTime = 10;
+            unforget.currentTime = 48;
             unforget.play();
             setTimeout(function() {
               unforget.pause();
-              jeopardy.play();
+              
               
               const y = prompt(songsQuestions[4].questions,`Type${songsQuestions[4].choices}`);
               if(y === songsQuestions[4].answer) {
@@ -585,7 +585,7 @@ if(y === sportsQuestions[0].answer) {
     $('.scoreSheet').html(score);
   
       }
-      $('.sports2').css("background-color", "black");
+      $('.sports2').css("background-color", "yellow");
       
     });
 
@@ -662,20 +662,22 @@ if(y === sportsQuestions[0].answer) {
 
             $('.music2').on('click', function () {
               
-              const y = prompt(musicQuestions[1].questions `Type${musicQuestions[1].choices}`);
+              const y = prompt(musicQuestions[1].questions, `Type${musicQuestions[1].choices}`);
             if(y === musicQuestions[1].answer) {
               window.alert('Correct')
-              score += 300;
+              score += 200;
               $('.scoreSheet').html(score);
               
               
             } else {
               window.alert('incorrect')
-              score -= 300;
+              score -= 200;
               $('.scoreSheet').html(score);
             }
             $('.music2').css("background-color", "yellow");
               });
+              
+              
               $('.music3').on('click', function () {
                 
                 const y = prompt(musicQuestions[2].questions, `Type${musicQuestions[2].choices}`);
