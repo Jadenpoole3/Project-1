@@ -33,7 +33,7 @@ let score = 0;
     },
 
     {
-      questions: "What team won 72 games in 2015-2016",
+      questions: "What baskeball team won 72 games in 2015-2016",
       answer: "Warriors",
       choices: "Jazz, Heat, Warriors, ",
       points: 500,
