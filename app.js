@@ -191,9 +191,9 @@ let score = 0;
       points: 500,
     },
     {
-      questions: "In New York I milly rock hide in my sock",
-      answer: "Magnolia",
-      choices: "Magnolia, Drake, Flex, ",
+      questions: "You are unforgettable I need to get you ",
+      answer: "Unforgettable",
+      choices: "Magnolia, Unforgettable, flex, ",
       points: 1000,
     }
 
@@ -210,7 +210,7 @@ let score = 0;
     thriller.play();
     setTimeout(function() {
       thriller.pause();
-
+      jeopardy.play();
       
 //const y = prompt(footballQuestions[0].question, `Type ${footballQuestions[0].choices}`);
 
@@ -244,6 +244,7 @@ let score = 0;
       chainsmokers.play();
         setTimeout(function() {
           chainsmokers.pause();
+          jeopardy.play();
 
 
       const y = prompt(songsQuestions[1].questions,`Type${songsQuestions[1].choices}`);
@@ -271,6 +272,7 @@ let score = 0;
         september.play();
           setTimeout(function() {
             september.pause();
+            jeopardy.play();
         
         const y = prompt(songsQuestions[2].questions,`Type${songsQuestions[2].choices}`);
       if(y === songsQuestions[2].answer) {
@@ -297,6 +299,7 @@ let score = 0;
         cry.play();
           setTimeout(function() {
             cry.pause();
+            jeopardy.play();
 
             const y = prompt(songsQuestions[3].questions,`Type${songsQuestions[3].choices}`);
             if(y === songsQuestions[3].answer) {
@@ -322,10 +325,11 @@ let score = 0;
           $('.song5').on('click', function () {
             
          jeopardy.pause();
-            magnolia.currentTime = 5;
-            magnolia.play();
+            unforget.currentTime = 10;
+            unforget.play();
             setTimeout(function() {
-              magnolia.pause();
+              unforget.pause();
+              jeopardy.play();
               
               const y = prompt(songsQuestions[4].questions,`Type${songsQuestions[4].choices}`);
               if(y === songsQuestions[4].answer) {
